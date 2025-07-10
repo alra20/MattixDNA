@@ -209,3 +209,4 @@ analysis/
 models/
 data/data_filled_sampled.csv
 data/data_with_clusters.csv
+*.bak
