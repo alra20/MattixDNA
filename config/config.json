@@ -42,6 +42,6 @@
         "confidence_threshold": 0.5,
         "null_fill_value": -100
     },
-    "run_pipeline": false,
+    "run_pipeline": true,
     "group_names": ["is_spam", "type", "priority", "queue"]
 }

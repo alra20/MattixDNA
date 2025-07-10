@@ -205,3 +205,7 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+analysis/
+models/
+data/data_filled_sampled.csv
+data/data_with_clusters.csv
