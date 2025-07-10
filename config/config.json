@@ -1,0 +1,47 @@
+{
+    "datasets": {
+        "path": "data"
+    },
+    "preprocessing": {
+        "remove_diacritics": true,
+        "lowercase": true,
+        "remove_punctuation": true,
+        "remove_stopwords": true,
+        "lemmatization": true
+    },
+    "feature_engineering": {
+        "max_features": 100,
+        "ngram_range": [1],
+        "min_df": 2,
+        "max_df": 0.95,
+        "vectorizer_model": "models/tfidf_vectorizer.pkl"
+    },
+    "clustering": {
+        "plots": true,
+        "max_clusters": 20,
+        "random_state": 42,
+        "model_name": "models/kmeans_model.pkl",
+        "vocabulary_file": "models/cluster_vocabularies.json"
+    },
+    "analysis_path": "analysis",
+    "logs_path": "logs",
+    "sampling": {
+        "n_samples": 100
+    },  
+    "classification": {
+        "model_path": "models/classification",
+        "test_size": 0.2,
+        "random_state": 42,
+        "cv_folds": 5
+    },
+    "random_state": 42,
+    "mlp_model_path": "models/mlp_models",
+    "group_name": ["is_spam", "type", "priority", "queue"],
+    "drop_columns": ["tag_1", "tag_2", "tag_3", "tag_4", "tag_5", "tag_6", "tag_7", "tag_8"],
+    "null_filling": {
+        "confidence_threshold": 0.5,
+        "null_fill_value": -100
+    },
+    "run_pipeline": false,
+    "group_names": ["is_spam", "type", "priority", "queue"]
+}
